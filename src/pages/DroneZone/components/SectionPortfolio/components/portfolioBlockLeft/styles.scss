@@ -1,0 +1,51 @@
+@import '../../../../../../styles/index.scss';
+
+.portfolio-block {
+  width: 100%;
+  display: flex;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__video {
+    &--left {
+      width: 50%;
+
+      @media screen and (max-width: $deviceSizeMD) {
+        width: 100%;
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  &__info {
+    &--left {
+      width: 50%;
+      padding: 0 72px 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media screen and (max-width: $deviceSizeLG) {
+        padding: 0 48px 0;
+      }
+
+      @media screen and (max-width: $deviceSizeMD) {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 48px;
+        padding: 0 24px;
+      }
+
+      @media screen and (max-width: $deviceSizeXS) {
+        margin-bottom: 40px;
+        padding: 0 16px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import './../../styles/constants/index.scss';
+@import './../../styles/mixins';
+
+.button {
+  max-width: 205px;
+  width: 100%;
+  min-height: 48px;
+  font-size: 16px;
+  font-family: 'MariadPro', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 32px;
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &--color-blue {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+    background-color: $buttonBlue;
+    color: $white;
+
+    &:hover {
+      background: $gradient;
+    }
+  }
+
+  &--color-secondblue {
+    background-color: $buttonBlue;
+    color: $white;
+
+    &:hover {
+      background: $gradient;
+    }
+
+    @media screen and (max-width: $deviceSizeXS) {
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &--color-transparent {
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+      color: $linkHoverColor;
+
+      .cls-1 {
+        opacity: initial;
+        fill: $linkHoverColor;
+      }
+    }
+  }
+}

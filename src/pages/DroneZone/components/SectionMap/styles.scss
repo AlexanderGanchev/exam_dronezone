@@ -1,0 +1,17 @@
+@import '../../../../styles/constants/index.scss';
+
+.google-map {
+  display: flex;
+  justify-content: center;
+  min-height: 595px;
+  border: none;
+
+  div {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+}
+
+.map {
+  position: relative;
+}

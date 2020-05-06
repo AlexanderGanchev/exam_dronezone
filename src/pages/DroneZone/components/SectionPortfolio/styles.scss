@@ -1,0 +1,21 @@
+@import '../../../../styles/constants/index.scss';
+
+.portfolio {
+  height: 100%;
+  background-color: $GreyBg;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    // padding: 0 24px;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    // padding: 0 16px;
+  }
+}
+
+.portfolio-right {
+  @media screen and (max-width: $deviceSizeMD) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

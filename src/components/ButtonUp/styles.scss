@@ -1,0 +1,29 @@
+@import '../../styles/constants/index.scss';
+@import '../../styles/_mixins.scss';
+
+.button-up {
+  @include display-flex(row, center, center);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+  background-color: $black;
+  opacity: 0;
+  transition: background-color $animTimeFast ease, opacity $animTimeFast ease,
+    color $animTimeFast ease;
+  pointer-events: none;
+
+  &:hover {
+    color: var(--primary);
+    background-color: var(--onPrimaryHover);
+    transition: 0.2s;
+  }
+
+  // Modified
+
+  &--visible {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}

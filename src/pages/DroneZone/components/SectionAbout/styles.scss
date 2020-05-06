@@ -1,0 +1,16 @@
+@import '../../../../styles/constants/index.scss';
+
+.about {
+  min-height: 600px;
+  background-color: $GreyBg;
+  padding: 96px 24px;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    padding: 40px 16px;
+  }
+
+  &__button-about {
+    display: flex;
+    justify-content: center;
+  }
+}

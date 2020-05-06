@@ -1,0 +1,50 @@
+@import '../../../../../../styles/index.scss';
+
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+  margin-bottom: 96px;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+    grid-gap: 8px;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 8px;
+    grid-gap: 8px;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__icon {
+    height: 96px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: $fontWeightBold;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    background-image: $gradient;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    width: 248px;
+    font-size: 18px;
+    color: $textSecondary;
+    line-height: 32px;
+  }
+}

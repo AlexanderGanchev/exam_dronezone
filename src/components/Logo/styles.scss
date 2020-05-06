@@ -1,0 +1,16 @@
+@import '../../styles/constants/index.scss';
+
+.logo {
+  max-width: 216px;
+  width: 100%;
+  font-size: 32px;
+  object-fit: contain;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &__logo-title {
+    text-transform: uppercase;
+    font-weight: $fontWeightBold;
+  }
+}

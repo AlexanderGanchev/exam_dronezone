@@ -1,0 +1,67 @@
+@import '../../../../styles/constants/index.scss';
+
+.feedback {
+  height: 100%;
+  padding: 96px 0;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    padding: 40px 0 70px;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    padding: 40px 0 64px;
+  }
+
+  &__healine {
+    color: $textSecondary;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 96px;
+
+    @media screen and (max-width: $deviceSizeMD) {
+      margin-bottom: 48px;
+      padding: 0 24px;
+    }
+
+    @media screen and (max-width: $deviceSizeXS) {
+      margin-bottom: 40px;
+      padding: 0 16px;
+    }
+  }
+
+  &__slider {
+    cursor: pointer;
+
+    .slick-slide {
+      outline: none;
+      & > div {
+        @media screen and (min-width: $deviceSizeMD) {
+          opacity: 0.5;
+        }
+      }
+
+      &.slick-center {
+        & > div {
+          opacity: 1;
+        }
+      }
+
+      & > div {
+        margin: 0 16px;
+
+        & > div {
+          // max-width: 565px;
+          // min-height: 340px;
+          width: 100%;
+          padding: 40px 32px;
+          margin-bottom: 16px;
+
+          @media screen and (max-width: $deviceSizeXS) {
+            padding: 32px 34px;
+          }
+        }
+      }
+    }
+  }
+}

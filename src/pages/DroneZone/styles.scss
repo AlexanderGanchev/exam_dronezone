@@ -1,0 +1,21 @@
+@import '../../styles/index.scss';
+
+.landing {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: $white;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+  &__button-up-wrapper {
+    position: fixed;
+    right: 10px;
+    bottom: 48px;
+    opacity: 0.9;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}

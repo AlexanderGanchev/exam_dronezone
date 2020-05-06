@@ -1,0 +1,68 @@
+@import '../../../../styles/constants/index.scss';
+
+.drones {
+  background-image: url(./../../../../assets/images/drone.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 96px 0;
+
+  @media screen and (max-width: $deviceSizeLG) {
+    background-image: none;
+    padding: 96px 24px;
+  }
+
+  @media screen and (max-width: $deviceSizeMD) {
+    padding: 40px 24px;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    padding: 40px 16px;
+  }
+
+  &__drones-image {
+    margin: 0 auto;
+    display: none;
+
+    @media screen and (max-width: $deviceSizeLG) {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__section-title-wrapper {
+    @media screen and (max-width: $deviceSizeLG) {
+      text-align: center;
+    }
+  }
+
+  &__section-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: $fontWeightBold;
+    color: transparent;
+    background-clip: text;
+    background-image: $gradient;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      font-size: 32px;
+    }
+  }
+
+  &__section-subtitle {
+    max-width: 735px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    color: $textSecondary;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: $deviceSizeLG) {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+}

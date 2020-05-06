@@ -1,0 +1,19 @@
+@import '../../../../styles/index.scss';
+
+.footer {
+  padding: 54px 0;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    padding: 48px 0;
+  }
+
+  &__footer-subtitle {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../../../styles/constants/index.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: 110px;
+  padding-top: 56px;
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: $deviceSizeLG) {
+    padding: 48px 16px 0;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    padding-top: 16px;
+  }
+
+  &--on-scroll {
+    background-color: $black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-height: 85px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+  }
+
+  &__logo {
+    margin-right: 16px;
+  }
+
+  &__right-block {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 10px;
+    }
+  }
+
+  &__menu-btn-wrapper {
+    display: flex;
+    flex-shrink: 0;
+  }
+}

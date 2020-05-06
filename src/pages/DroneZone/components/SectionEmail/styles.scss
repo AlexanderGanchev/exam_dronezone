@@ -1,0 +1,83 @@
+@import '../../../../styles/constants/index.scss';
+
+.email {
+  // min-height: 496px;
+  height: 100%;
+  padding: 104px 0;
+  background-image: url('./../../../../assets/images/emailbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: $deviceSizeMD) {
+    padding: 40px 24px;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    padding: 40px 16px 112px;
+  }
+
+  &__wrapper {
+  }
+
+  &__title {
+    max-width: 800px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: $fontWeightBold;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__email-send {
+    max-width: 648px;
+    width: 100%;
+    height: 54px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 2px 2px 2px 0;
+    margin: 0 auto;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    max-width: 348px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 48px;
+    border: none;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      padding: 0 32px;
+    }
+  }
+}
